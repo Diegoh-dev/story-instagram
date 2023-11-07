@@ -1,8 +1,9 @@
 import Slide from "./Slide.js";
-const container = document.getElementById('slide');
-const elements = document.querySelectorAll('#slide-elements');
-const controls = document.getElementById('slide-controls');
-if (container && elements && controls) {
-    new Slide(container, Array.from(elements), controls, 3000);
+const container = document.getElementById('#slide');
+const elements = document.getElementById('#slide-elements');
+const controls = document.getElementById('#slide-controls');
+if (container && elements && controls && elements.children.length) {
+    new Slide(container, Array.from(elements.children), controls, 3000);
 }
+console.log('teste2');
 //# sourceMappingURL=script.js.map
